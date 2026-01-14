@@ -3,48 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <title>Muhammad Abdullah | Full Stack Developer & Software Engineer</title>
-
     <meta name="description"
         content="Explore the interactive portfolio of Muhammad Abdullah, a passionate Full Stack and Software Developer specializing in modern web solutions.">
 
     <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-
     <canvas id="particle-canvas"></canvas>
-
     <div class="theme-switcher">
         <div class="theme-btn">
             <i class='bx bx-palette'></i>
         </div>
         <div class="theme-options">
-            <div class="theme-opt dark active" data-theme="dark"></div>
-            <div class="theme-opt light" data-theme="light"></div>
-            <div class="theme-opt blue" data-theme="blue"></div>
-            <div class="theme-opt emerald" data-theme="emerald"></div>
-            <div class="theme-opt warm" data-theme="warm"></div>
+            <div class="theme-opt dark active" data-theme="dark" title="Dark Theme"></div>
+            <div class="theme-opt light" data-theme="light" title="Light Theme"></div>
+            <div class="theme-opt blue" data-theme="blue" title="Blue Theme"></div>
+            <div class="theme-opt emerald" data-theme="emerald" title="Emerald Theme"></div>
+            <div class="theme-opt warm" data-theme="warm" title="Warm Theme"></div>
         </div>
     </div>
-
-    <!-- ========================= header ============================= -->
+    <!-- ========================= header design ============================= -->
     <header class="header">
         <a href="#" class="logo">Muhammad Abdullah<span>.</span></a>
+
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
@@ -55,8 +50,9 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    <!-- =========================== header design ends ============================ -->
 
-    <!-- ============================ home ============================== -->
+    <!-- ============================ home section design ============================== -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
@@ -64,110 +60,208 @@
             <h3>And I'm a <span>Full Stack & Software Developer</span></h3>
             <p>Feel free to explore my portfolio and get in touch if you’d like to collaborate or learn more about my
                 work!</p>
-
             <div class="social-media">
+                <!-- <a href="https://www.instagram.com/developer_web14/" target="_blank"><i class='bx bxl-instagram'></i></a> -->
                 <a href="https://www.linkedin.com/in/muhammad-abdullah2005/" target="_blank"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/muhammad-abdullaahh" target="_blank"><i
-                        class='bx bxl-github'></i></a>
-                <a href="https://mail.google.com/mail/u/0/" target="_blank"><i
-                        class='bx bxl-gmail'></i></a>
-            </div>
+                <a href="https://github.com/muhammad-abdullaahh" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class='bx bxl-gmail'></i></a>
 
-            <a href="./Cv.pdf" class="btn" target="_blank">Download CV</a>
+            </div>
+            <a href="Cv.pdf" class="btn" target="_blank">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="./homee.jpeg" alt="Muhammad Abdullah">
+            <img src="homee.jpeg" alt="">
         </div>
     </section>
+    <!-- ======================== home section design ends ========================= -->
 
-    <!-- ============================ about ============================== -->
+    <!-- ============================ about section design ============================== -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./homee.jpeg" alt="About image">
+            <img src="homee.jpeg" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Full stack and Software Developer !</h3>
-            <p>
-                Hey there! I'm a full stack web developer passionate about crafting visually appealing
-                and seamless websites using HTML, CSS, Bootstrap, and JavaScript.
-                <br><br>
+            <p>Hey there! I'm a full stack web developer passionate about crafting visually appealing
+                and seamless websites using HTML, CSS, Bootstrap, and JavaScript. I specialize in
+                creating responsive, user-focused designs that meet both client and user needs. <br><br>
                 In addition to front-end development, I've recently expanded my skill set by learning
-                Object-Oriented Programming (OOP) in Java and C#.
-                <br><br>
+                Object-Oriented Programming (OOP) in Java and C#. This has strengthened my understanding
+                of software design principles like encapsulation, inheritance, polymorphism, and abstraction,
+                allowing me to write more scalable and maintainable code. <br><br>
                 I'm currently exploring PHP and other emerging technologies to further broaden my
-                expertise.
-            </p>
+                expertise. I thrive on collaborating to develop innovative and dynamic web and software
+                solutions.
         </div>
     </section>
+    <!-- ============================ about section design ends ============================== -->
 
-    <!-- ============================ services ============================== -->
+    <!-- ============================ service section design ============================== -->
     <section class="service" id="services">
         <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="services-container">
-            <!-- unchanged service cards -->
+            <div class="services-box">
+                <i class='bx bxl-html5'></i>
+                <h3>HTML5</h3>
+                <p>I have a solid understanding of HTML, enabling me to structure web content effectively and create
+                    <br> well-organized, semantic web pages.
+                </p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-css3'></i>
+                <h3>CSS3</h3>
+                <p>With my strong CSS skills, I can style websites to be visually appealing, ensuring they are
+                    responsive and perform well across various devices and screen sizes.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-python'></i>
+                <h3>Python</h3>
+                <p>I have self-learned Python and successfully implemented various projects, leveraging its versatility
+                    for automation and efficient problem-solving.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-terminal'></i>
+                <h3>Low-Level Languages</h3>
+                <p>I have a solid foundation in low-level programming with C and Assembly, enabling me to write highly
+                    efficient code and understand the hardware-software interface.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>OOP with Java</h3>
+                <p>I have a strong understanding of Object-Oriented Programming in Java, applying concepts like
+                    encapsulation, inheritance, and abstraction to create scalable and maintainable applications.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-joystick'></i>
+                <h3>Game Dev with C#</h3>
+                <p>I explore game development using C#, applying OOP principles to design interactive and
+                    performance-optimized experiences, particularly using engines like Unity.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-brain'></i>
+                <h3>DSA</h3>
+                <p>I have a strong grasp of Data Structures and Algorithms, enabling me to write optimized, efficient
+                    code and solve complex problem-solving challenges.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-chip'></i>
+                <h3>Digital Logic Design</h3>
+                <p>Knowledgeable in designing and analyzing digital circuits, logic gates, and hardware systems using
+                    fundamental architectural principles.</p>
+            </div>
         </div>
     </section>
+    <!-- ============================ service section design ends ============================== -->
 
-    <!-- ============================ portfolio ============================== -->
+
+    <!-- ============================ portfolio section design ============================== -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">My Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="./images/projects/project1.png" alt="">
+                <img src="images/projects/project1.png" alt="">
                 <div class="portfolio-layer">
                     <h4>CAKE STUDIO</h4>
-                    <p>A vibrant website celebrating freshly baked cakes.</p>
-                    <a href="https://cakeestudio.netlify.app/" target="_blank"><i
+                    <p>A vibrant website celebrating freshly baked cakes made with love and premium ingredients.</p>
+                    <a href="https://cakeestudio.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/projects/project2.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>DECODE AND DISCOVER</h4>
+                    <p>A story-based quiz adventure to test your brain and build your coding confidence.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Decode-and-Discover" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <!-- other projects unchanged -->
+            <div class="portfolio-box">
+                <img src="images/projects/vampire.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>VAMPIRE EPIDEMIC</h4>
+                    <p>A gripping horror-survival experience developed in C#, challenging players to survive a dark city
+                        plagued by a supernatural outbreak.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Vampire-Epidemic-CSharp" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/projects/jarvis.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>JARVIS ASSISTANT</h4>
+                    <p>A sophisticated virtual assistant capable of voice recognition, task automation, and intelligent
+                        responses.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Jarvis-Assistant" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/projects/algo_puzzle.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>ALGO PUZZLE BOARD</h4>
+                    <p>An interactive board made to learn DSA easily, featuring functioning algorithms that enhance user
+                        understanding.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Algo-puzzle-Board" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/projects/solara.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>SOLARA</h4>
+                    <p>An emotional AI assistant designed to provide support and companionship, always ready to listen
+                        to the user at any time.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Solara" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- ============================ portfolio section design ends ============================== -->
 
-    <!-- ============================ contact ============================== -->
+    <!-- ============================ contact section design ============================== -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="f896c54e-bbb1-4454-8075-5b73844422aa">
             <input type="hidden" name="from_name" value="Portfolio Abdullah">
             <input type="hidden" name="subject" value="New Message from Portfolio">
-
             <div class="input-box">
                 <input type="text" placeholder="Full Name" name="name">
                 <input type="email" placeholder="Email Address" name="email">
             </div>
-
             <div class="input-box">
                 <input type="number" placeholder="Mobile Number" name="phone">
                 <input type="text" placeholder="Email Subject" name="subject">
             </div>
-
-            <textarea rows="10" placeholder="Your Message" name="message"></textarea>
+            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+    <!-- ============================ contact section design ends ============================== -->
 
-    <!-- ============================ footer ============================== -->
+    <!-- ================================= footer design ==================================== -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2025 by Muhammad Abdullah | All Rights Reserved.</p>
         </div>
+
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
-    <!-- scripts -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./script.js"></script>
 
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- custom javascrip -->
+    <script src="script.js"></script>
 </body>
+
 </html>
