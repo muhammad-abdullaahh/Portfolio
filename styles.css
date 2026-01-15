@@ -25,7 +25,6 @@ body.light-theme {
     --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
     --header-bg: rgba(243, 244, 246, 0.8);
 }
-
 body.blue-theme {
     --bg-color: #051937;
     --second-bg-color: #012b5e;
@@ -889,5 +888,6 @@ span {
         margin: 2rem 1rem 2rem 0;
     }
 }
+
 
 
