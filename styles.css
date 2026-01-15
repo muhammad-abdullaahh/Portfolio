@@ -13,7 +13,6 @@
     --gradient: linear-gradient(135deg, var(--main-color), var(--accent-color));
     --header-bg: rgba(10, 10, 12, 0.7);
 }
-
 body.light-theme {
     --bg-color: #f3f4f6;
     --second-bg-color: #e5e7eb;
@@ -890,4 +889,5 @@ span {
         margin: 2rem 1rem 2rem 0;
     }
 }
+
 
