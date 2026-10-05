@@ -1,113 +1,87 @@
 # 🌐 Muhammad Abdullah's Portfolio
 
-A modern, high-performance **personal portfolio website** designed to showcase projects, creativity, and technical depth through a premium **Glassmorphism UI** and immersive interactivity.
-
-This portfolio is not just a static site — it’s an experience.
+A modern, high-performance **personal portfolio website** designed to showcase projects, experience, skills, and technical depth through a premium **Glassmorphism UI** and immersive interactivity.
 
 ---
 
 ## ✨ Project Overview
 
-**Title:** Muhammad Abdullah's Interactive Portfolio  
-**Design Aesthetic:**  
-- Modern **Glassmorphism** UI  
-- Premium typography using **Syne** (headings) & **Plus Jakarta Sans** (body)  
-
-**Core Experience:**  
-- A dynamic **Canvas-based particle background**  
-- Particles intelligently shift colors based on the active theme  
-- Smooth animations and polished micro-interactions throughout
+- **Owner:** Muhammad Abdullah
+- **Role:** Full Stack & Software Developer
+- **Design Aesthetic:** Modern Glassmorphism UI with responsive design
+- **Typography:** **Syne** (headings) & **Plus Jakarta Sans** (body)
+- **Core Experience:** Dynamic canvas-based particle engine that adapts to selected themes
 
 ---
 
 ## 🚀 Features
 
 - 🎨 **Advanced Theme System**
-  - 5 selectable themes: **Dark, Light, Blue, Emerald, Warm**
-  - Theme preference is saved using **localStorage**
-  - Real-time UI and particle color transitions
-
-- 🌌 **Dynamic Particle Background**
-  - Custom-built **Canvas particle engine**
-  - Automatically adapts particle colors to the selected theme
-  - Optimized for performance across devices
-
-- 📬 **Premium Contact Form System**
-  - Powered by **Web3Forms** for real-time email notifications
-  - JavaScript-based **Async Form Handler** (no page reloads)
-  - Animated **Success Tick Modal** on successful submission
-  - Integrated submissions dashboard via Web3Forms
-
+  - 5 themes: **Dark, Light, Blue, Emerald, Warm**
+  - Theme preference persisted via `localStorage`
+  - Real-time UI and particle color adaptation
+- 🌌 **Interactive Canvas Particle Background**
+  - Custom canvas-based particle system with dynamic distance connecting lines
+- 💼 **Work Experience Section**
+  - Interactive cards highlighting roles at **ByteCorp Technologies** and **Falcon Tech Labs**
+  - Live pulsing status indicator for ongoing roles
+- 🛠️ **Skills Matrix**
+  - Interactive grid covering Python, React, FastAPI, PostgreSQL, Java, .NET, Low-Level Languages, and more
+- 📂 **Featured Projects Showcase**
+  - Showcasing full-stack applications like **Job Board Platform**, **Network Monitoring System**, **Secure Login System**, **Food Heaven**, and **Algo Puzzle Board**
+- 📬 **Asynchronous Contact Form**
+  - Powered by **Web3Forms** with real-time feedback and modal confirmation
 - 📱 **Fully Responsive Architecture**
-  - Optimized for **mobile, tablet, and desktop**
-  - Fixed glassmorphism-styled header
-  - Smooth navigation and layout consistency
+  - Optimized for mobile, tablet, and desktop displays
 
 ---
 
-## 📂 Projects Showcase
+## 📁 Project Structure
 
-| Project Name | Description | Repository |
-|--------------|------------|------------|
-| **Cake Studio** | Luxury bakery website mockup | — |
-| **Decode and Discover** | Mystery-themed quiz adventure | https://github.com/muhammad-abdullaahh/Decode-and-Discover |
-| **Vampire Epidemic** | C# horror-survival game (Windows Forms) | https://github.com/muhammad-abdullaahh/Vampire-Epidemic-CSharp |
-| **Jarvis Assistant** | Intelligent AI voice assistant | https://github.com/muhammad-abdullaahh/Jarvis-Assistant |
-| **Algo Puzzle Board** | Interactive DSA learning platform | https://github.com/muhammad-abdullaahh/Algo-puzzle-Board |
-| **Solara** | Emotional AI companion | https://github.com/muhammad-abdullaahh/Solara |
+```
+Portfolio/
+├── index.html                           # Main entry point
+├── README.md                            # Documentation
+├── .gitignore                           # Git ignore rules
+└── assets/
+    ├── css/
+    │   └── styles.css                   # Complete design system & responsive styling
+    ├── js/
+    │   └── script.js                    # Particles, themes, navigation & interactions
+    ├── docs/
+    │   └── MUHAMMAD_ABDULLAH-resume.pdf # Resume / CV download
+    └── images/
+        ├── profile.jpeg                 # Profile photograph
+        └── projects/                    # Project thumbnail mockups
+            ├── algo_puzzle.png
+            ├── food-heaven.png
+            ├── job-board-platform.png
+            ├── network-monitoring.png
+            ├── secure-login.png
+            └── vampire.jpeg
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- HTML5  
-- CSS3 (Vanilla)  
-- JavaScript (ES6+)
-
-### Libraries & Assets
-- Boxicons  
-- Google Fonts (Syne, Plus Jakarta Sans)
-
-### Services
-- Web3Forms (Contact Form API)
+- **Frontend:** HTML5, CSS3 (Vanilla), JavaScript (ES6+)
+- **Libraries:** Boxicons, Google Fonts, ScrollReveal
+- **Integrations:** Web3Forms API
 
 ---
 
 ## 💻 Setup Instructions
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-username/your-portfolio-repo.git
-```
-
-### 2️⃣ Open the Project
-Open `index.html` directly in your browser.
-
-### 3️⃣ Configure Web3Forms
-1. Visit https://web3forms.com  
-2. Generate your **Access Key**  
-3. Replace the placeholder key in your contact form:
-
-```html
-<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-```
-
-4. Save and deploy 🚀
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/muhammad-abdullaahh/Portfolio.git
+   ```
+2. **Open the project:**
+   Open `index.html` in any modern web browser or deploy directly to Netlify / GitHub Pages.
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
-
----
-
-## 📫 Contact
-
-**Muhammad Abdullah**  
-GitHub: https://github.com/muhammad-abdullaahh  
-
----
-
-> Built with precision, creativity, and a vision for premium web experiences.

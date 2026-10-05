@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
@@ -46,6 +46,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -57,8 +58,9 @@
         <div class="home-content">
             <h4>Hello, I'm</h4>
             <h1>Muhammad Abdullah</h1>
-            <h4><span>Full Stack & Software Developer</span></h4>
-            <p>Software Engineering Student & Cybersecurity Enthusiast Building Real-World Solutions. I specialize in Web Dev, Linux & Bash, and Python, .NET, Java, C/C#, while actively Exploring Ethical Hacking & Red Hat Security.</p>
+            <h2><span>Full Stack & Software Developer</span></h2>
+            <p>Software Engineering Student & Cybersecurity Enthusiast | Building secure, real-world web & desktop
+                applications with Python, React, and PostgreSQL.</p>
             <div class="social-media">
                 <!-- <a href="https://www.instagram.com/developer_web14/" target="_blank"><i class='bx bxl-instagram'></i></a> -->
                 <a href="https://www.linkedin.com/in/muhammad-abdullah2005/" target="_blank"><i
@@ -67,11 +69,12 @@
                 <a href="https://mail.google.com/mail/u/0/" target="_blank"><i class='bx bxl-gmail'></i></a>
 
             </div>
-            <a href="Cv.pdf" class="btn" target="_blank">Download CV</a>
+            <a href="assets/docs/MUHAMMAD_ABDULLAH-resume.pdf" download="MUHAMMAD_ABDULLAH-resume.pdf" class="btn"
+                target="_blank">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="homee.jpeg" alt="">
+            <img src="assets/images/profile.jpeg" alt="Muhammad Abdullah">
         </div>
     </section>
     <!-- ======================== home section design ends ========================= -->
@@ -79,22 +82,21 @@
     <!-- ============================ about section design ============================== -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="homee.jpeg" alt="">
+            <img src="assets/images/profile.jpeg" alt="Muhammad Abdullah">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Full stack and Software Developer !</h3>
-            <p>Hey there! I'm a full stack web developer passionate about crafting visually appealing
-                and seamless websites using HTML, CSS, Bootstrap, and JavaScript. I specialize in
-                creating responsive, user-focused designs that meet both client and user needs. <br><br>
-                In addition to front-end development, I've recently expanded my skill set by learning
-                Object-Oriented Programming (OOP) in Java and C#. This has strengthened my understanding
-                of software design principles like encapsulation, inheritance, polymorphism, and abstraction,
-                allowing me to write more scalable and maintainable code. <br><br>
-                I'm currently exploring PHP and other emerging technologies to further broaden my
-                expertise. I thrive on collaborating to develop innovative and dynamic web and software
-                solutions.
+            <p>Hi, I'm Abdullah, a full stack developer and Software Engineering student in Karachi. I build web app and
+                desktop apps that look good, work well on any screen. <br><br>
+                I build complete applications with React on the front end and Python (FastAPI) with PostgreSQL on the
+                back end, including login systems, databases, and deployment. I also work as a Backend Developer intern,
+                where I build real APIs. <br><br>
+                Alongside my degree, I'm studying Cyber Security and Digital Forensics, so I think about security while
+                I code, not after. <br><br>
+                I like building things people can click, test, and learn from. If you have an idea, I'd love to help
+                build it.</p>
         </div>
     </section>
     <!-- ============================ about section design ends ============================== -->
@@ -109,6 +111,21 @@
                 <h3>Python</h3>
                 <p>I have self-learned Python and successfully implemented various projects, leveraging its versatility
                     for automation and efficient problem-solving.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-react'></i>
+                <h3>React</h3>
+                <p>Skilled in building responsive, component-driven user interfaces and dynamic web applications with modern React and state management.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bolt-circle'></i>
+                <h3>FastAPI</h3>
+                <p>Experienced in architecting high-performance asynchronous RESTful APIs with Python, featuring clean routing, validation, and secure authentication.</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-postgresql'></i>
+                <h3>PostgreSQL</h3>
+                <p>Proficient in relational database design, data modeling, complex query optimization, and managing reliable data persistence.</p>
             </div>
             <div class="services-box">
                 <i class='bx bx-terminal'></i>
@@ -143,22 +160,84 @@
             <div class="services-box">
                 <i class='bx bx-data'></i>
                 <h3>SQL</h3>
-                <p>Proficient in writing efficient SQL queries, designing robust schemas, and managing relational databases for scalable applications.</p>
+                <p>Proficient in writing efficient SQL queries, designing robust schemas, and managing relational
+                    databases for scalable applications.</p>
             </div>
             <div class="services-box">
                 <i class='bx bx-command'></i>
                 <h3>CLI</h3>
-                <p>I have mastered the Command Line Interfaces of both Windows and Linux, utilizing advanced commands and scripting for efficient system administration, automation, and environment configuration.</p>
+                <p>I have mastered the Command Line Interfaces of both Windows and Linux, utilizing advanced commands
+                    and scripting for efficient system administration, automation, and environment configuration.</p>
             </div>
             <div class="services-box">
                 <i class='bx bx-sitemap'></i>
                 <h3>Algorithm Design and Analysis</h3>
-                <p>Proficient in designing, analyzing, and optimizing complex algorithms to solve computational problems with high efficiency and performance.</p>
+                <p>Proficient in designing, analyzing, and optimizing complex algorithms to solve computational problems
+                    with high efficiency and performance.</p>
             </div>
         </div>
     </section>
     <!-- ============================ service section design ends ============================== -->
 
+    <!-- ============================ experience section design ============================ -->
+    <section class="experience" id="experience">
+        <h2 class="heading">Work <span>Experience</span></h2>
+
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class='bx bx-briefcase'></i>
+                    </div>
+                    <div class="exp-title-group">
+                        <div class="exp-title-row">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="exp-badge active"><span class="pulse-dot"></span> Jul 2026 – Present</span>
+                        </div>
+                        <h4 class="company-name">ByteCorp Technologies <span class="exp-type">• Internship</span></h4>
+                        <p class="exp-location"><i class='bx bx-map-pin'></i> Karachi, Sindh, Pakistan • On-site</p>
+                    </div>
+                </div>
+                <div class="exp-body">
+                    <p>Contributing as a Software Engineer Intern at ByteCorp, actively building and scaling real-world software solutions. Working with engineering teams on backend architecture, application performance, and implementing robust production features.</p>
+                    <div class="exp-skills">
+                        <span>Python</span>
+                        <span>.NET Framework</span>
+                        <span>Backend Development</span>
+                        <span>FastAPI</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-icon">
+                        <i class='bx bx-server'></i>
+                    </div>
+                    <div class="exp-title-group">
+                        <div class="exp-title-row">
+                            <h3>Software Engineer Intern (Backend)</h3>
+                            <span class="exp-badge">Jun 2026 – Aug 2026</span>
+                        </div>
+                        <h4 class="company-name">Falcon Tech Labs Pvt Ltd <span class="exp-type">• Internship</span></h4>
+                        <p class="exp-location"><i class='bx bx-map-pin'></i> Karachi, Sindh, Pakistan • On-site</p>
+                    </div>
+                </div>
+                <div class="exp-body">
+                    <p>Worked on developing and maintaining backend systems, engineering secure RESTful APIs, managing database structures, and implementing server-side business logic for production services.</p>
+                    <div class="exp-skills">
+                        <span>RESTful APIs</span>
+                        <span>Database Management</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Server Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================ experience section design ends ======================== -->
 
     <!-- ============================ portfolio section design ============================== -->
     <section class="portfolio" id="portfolio">
@@ -166,24 +245,27 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/projects/network-monitoring.png" alt="">
+                <img src="assets/images/projects/network-monitoring.png" alt="Network Monitoring System">
                 <div class="portfolio-layer">
                     <h4>NETWORK MONITORING SYSTEM</h4>
-                    <p>A multi-task Python and HTML-based project simulating a real-world network infrastructure management system.</p>
-                    <a href="https://github.com/muhammad-abdullaahh/Network-Source-Monitoring-And-Access-Management-System" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <p>A multi-task Python and HTML-based project simulating a real-world network infrastructure
+                        management system.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Network-Source-Monitoring-And-Access-Management-System"
+                        target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/secure-login.png" alt="">
+                <img src="assets/images/projects/secure-login.png" alt="Secure Login System">
                 <div class="portfolio-layer">
                     <h4>SECURE LOGIN SYSTEM</h4>
-                    <p>A professional-grade authentication system with password security, brute-force protection, and SQL injection defense.</p>
+                    <p>A professional-grade authentication system with password security, brute-force protection, and
+                        SQL injection defense.</p>
                     <a href="https://github.com/muhammad-abdullaahh/Secure-Login-System" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/vampire.jpeg" alt="">
+                <img src="assets/images/projects/vampire.jpeg" alt="Vampire Epidemic">
                 <div class="portfolio-layer">
                     <h4>VAMPIRE EPIDEMIC</h4>
                     <p>A gripping horror-survival experience developed in C#, challenging players to survive a dark city
@@ -193,29 +275,30 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/jarvis.png" alt="">
+                <img src="assets/images/projects/job-board-platform.png" alt="Job Board Platform">
                 <div class="portfolio-layer">
-                    <h4>JARVIS ASSISTANT</h4>
-                    <p>A sophisticated virtual assistant capable of voice recognition, task automation, and intelligent
-                        responses.</p>
-                    <a href="https://github.com/muhammad-abdullaahh/Jarvis-Assistant" target="_blank"><i
+                    <h4>JOB BOARD PLATFORM</h4>
+                    <p>An enterprise-grade full-stack recruitment platform with FastAPI, PostgreSQL, and React featuring role-based dashboards and automated hiring workflows.</p>
+                    <a href="https://github.com/muhammad-abdullaahh/Job-Board-Platform" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/algo_puzzle.png" alt="">
+                <img src="assets/images/projects/algo_puzzle.png" alt="Algo Puzzle Board">
                 <div class="portfolio-layer">
                     <h4>ALGO PUZZLE BOARD</h4>
-                    <p>An interactive board designed to simplify DSA learning with hands-on algorithm visualizations.</p>
+                    <p>An interactive board designed to simplify DSA learning with hands-on algorithm visualizations.
+                    </p>
                     <a href="https://github.com/muhammad-abdullaahh/Algo-puzzle-Board" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/projects/food-heaven.png" alt="">
+                <img src="assets/images/projects/food-heaven.png" alt="Food Heaven">
                 <div class="portfolio-layer">
                     <h4>FOOD HEAVEN</h4>
-                    <p>A premium, full-stack restaurant management system built with ASP.NET Core MVC and Tailwind CSS.</p>
+                    <p>A premium, full-stack restaurant management system built with ASP.NET Core MVC and Tailwind CSS.
+                    </p>
                     <a href="https://github.com/muhammad-abdullaahh/Food-Heaven" target="_blank"><i
                             class='bx bx-link-external'></i></a>
                 </div>
@@ -225,21 +308,21 @@
     <!-- ============================ portfolio section design ends ============================== -->
 
     <!-- ============================ contact section design ============================== -->
-     <section class="contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="f896c54e-bbb1-4454-8075-5b73844422aa">
             <input type="hidden" name="from_name" value="Portfolio Abdullah">
             <input type="hidden" name="subject" value="New Message from Portfolio">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" name="name">
-                <input type="email" placeholder="Email Address" name="email">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="email" placeholder="Email Address" name="email" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="phone">
-                <input type="text" placeholder="Email Subject" name="subject">
+                <input type="tel" placeholder="Mobile Number" name="phone">
+                <input type="text" placeholder="Email Subject" name="subject" required>
             </div>
-            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" name="message" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
@@ -265,15 +348,11 @@
             <button class="btn" onclick="closeModal()">Close</button>
         </div>
     </div>
-    
+
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- custom javascrip -->
-    <script src="script.js"></script>
+    <!-- custom javascript -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-
-
-
-

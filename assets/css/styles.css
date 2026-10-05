@@ -304,9 +304,15 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 14rem 10% 4rem;
 }
 
+.home-content h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.home-content h2,
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 600;
@@ -398,7 +404,6 @@ span {
 
 .home-img img {
     width: 25vw;
-    margin-top: 4rem;
     border-radius: 50%;
     filter: drop-shadow(0 0 30px rgba(var(--main-color-rgb), 0.2));
 }
@@ -496,11 +501,198 @@ span {
 }
 
 /* -------------------------   skills work ends    ------------------------- */
-/* -------------------------   portfolio work starts    ------------------------- */
-.portfolio {
-    background: var(--second-bg-color);
+/* -------------------------   experience work starts    ------------------------- */
+.experience {
+    min-height: 100vh;
 }
 
+.experience-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 3.5rem;
+    box-shadow: var(--shadow);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gradient);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--main-color);
+    box-shadow: 0 15px 35px rgba(var(--main-color-rgb), 0.15);
+}
+
+.experience-card:hover::before {
+    opacity: 1;
+    width: 6px;
+}
+
+.exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.exp-icon {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    color: var(--main-color);
+    flex-shrink: 0;
+    transition: 0.3s ease;
+}
+
+.experience-card:hover .exp-icon {
+    background: var(--gradient);
+    color: #fff;
+    transform: rotate(5deg) scale(1.05);
+}
+
+.exp-title-group {
+    flex-grow: 1;
+}
+
+.exp-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.exp-title-row h3 {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.exp-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.exp-badge.active {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    margin-right: 8px;
+    display: inline-block;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.company-name {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.exp-type {
+    color: var(--text-color);
+    opacity: 0.6;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.exp-location {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.exp-body p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+.exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.exp-skills span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.5rem 1.4rem;
+    border-radius: 20px;
+    background: rgba(var(--main-color-rgb), 0.08);
+    border: 1px solid rgba(var(--main-color-rgb), 0.25);
+    color: var(--main-color);
+    transition: 0.3s ease;
+}
+
+.experience-card:hover .exp-skills span {
+    border-color: var(--main-color);
+}
+
+/* -------------------------   experience work ends    ------------------------- */
+/* -------------------------   portfolio work starts    ------------------------- */
 .portfolio {
     background: var(--second-bg-color);
 }
@@ -743,7 +935,7 @@ span {
     }
 
     .home {
-        padding: 0 5%;
+        padding: 12rem 5% 4rem;
     }
 }
 
@@ -760,7 +952,7 @@ span {
     }
 
     .home {
-        padding: 0 3%;
+        padding: 12rem 3% 4rem;
     }
 
     .home-content h1 {
@@ -802,7 +994,7 @@ span {
         flex-direction: column;
         text-align: center;
         gap: 3rem;
-        padding-top: 5rem;
+        padding: 12rem 3% 4rem;
     }
 
     .home-content {
@@ -841,6 +1033,18 @@ span {
 
     .contact form .input-box {
         grid-template-columns: 1fr;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .exp-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
     }
 }
 
