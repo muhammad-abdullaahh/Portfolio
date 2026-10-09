@@ -205,12 +205,16 @@ themeOpts.forEach(opt => {
 });
 
 function setTheme(theme) {
+    if (theme !== 'light' && theme !== 'dark') {
+        theme = 'dark';
+    }
+
     // Remove all theme classes
     document.body.classList.remove('light-theme', 'blue-theme', 'emerald-theme', 'warm-theme');
 
     // Add selected theme class
-    if (theme !== 'dark') {
-        document.body.classList.add(`${theme}-theme`);
+    if (theme === 'light') {
+        document.body.classList.add('light-theme');
     }
 
     // Update active state in UI
