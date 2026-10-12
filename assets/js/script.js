@@ -43,11 +43,24 @@ function closeModal() {
 }
 
 if (menuIcon && navbar) {
-    menuIcon.onclick = () => {
+    menuIcon.onclick = (e) => {
+        e.stopPropagation();
         menuIcon.classList.toggle('bx-x');
+        menuIcon.classList.toggle('bx-menu');
         navbar.classList.toggle('active');
     };
 }
+
+// Close mobile navbar when clicking outside
+document.addEventListener('click', (e) => {
+    if (navbar && menuIcon && navbar.classList.contains('active')) {
+        if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+            menuIcon.classList.remove('bx-x');
+            menuIcon.classList.add('bx-menu');
+            navbar.classList.remove('active');
+        }
+    }
+});
 
 // ================= scroll section active link =================
 const sections = document.querySelectorAll('section');
@@ -59,6 +72,7 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (menuIcon && navbar) {
             menuIcon.classList.remove('bx-x');
+            menuIcon.classList.add('bx-menu');
             navbar.classList.remove('active');
         }
     });
@@ -178,10 +192,14 @@ function connect(color) {
     }
 }
 
+let lastWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
-    init();
+    if (window.innerWidth !== lastWidth) {
+        lastWidth = window.innerWidth;
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+        init();
+    }
 });
 
 init();
@@ -243,14 +261,23 @@ document.addEventListener('click', (e) => {
 });
 
 // ================= Scroll Reveal =================
-ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-});
+if (typeof ScrollReveal !== 'undefined') {
+    const isMobile = window.innerWidth <= 768;
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .experience-card, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content p', { origin: 'right' });
+    const sr = ScrollReveal({
+        distance: isMobile ? '25px' : '50px',
+        duration: 900,
+        delay: 100,
+        reset: false,
+        viewFactor: 0.15
+    });
+
+    sr.reveal('.heading', { origin: 'top' });
+    sr.reveal('.about-img', { origin: isMobile ? 'bottom' : 'left' });
+    sr.reveal('.about-content', { origin: isMobile ? 'bottom' : 'right' });
+    sr.reveal('.services-box', { origin: 'bottom', interval: 50 });
+    sr.reveal('.experience-card', { origin: 'bottom', interval: 150 });
+    sr.reveal('.portfolio-box', { origin: 'bottom', interval: 100 });
+    sr.reveal('.contact form', { origin: 'bottom' });
+}
 
